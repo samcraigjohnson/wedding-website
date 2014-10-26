@@ -1,0 +1,88 @@
+<head>
+  <title>Allison & Sam Wedding</title>
+</head>
+
+<body>
+  {{> nav }}
+  {{> frontpage }}
+  {{> ourstory }}
+  {{> weddingParty }}
+  {{> details }}
+</body>
+
+<template name="details">
+  <div class="row full-width">
+    <div class="small-12 columns full-width">
+      <h1 class="text-center">Location</h1>
+      <h3 class="text-center">5441 Ross Neck Road, Cambride MD</h3>
+      <img id="loc-img" src="https://maps.googleapis.com/maps/api/staticmap?center=Easton+MD&zoom=9&scale=2&size=640x640&maptype=roadmap&markers=color:red%7C5441+Ross+Neck+Road,Cambride+MD">
+    </div>
+  </div>
+</template>
+
+<template name="weddingParty">
+  <div class="row" id="party-row">
+    <div class="small-12 columns">
+      <h1 class="text-center">The Wedding Party</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-12 columns">
+      <ul class="small-block-grid-7">
+        <li class="boy">Charles</li>
+        <li class="boy">John</li>
+        <li class="boy">Matt</li>
+        <li class="boy">Patrick</li>
+        <li class="girl">Emily</li>
+        <li class="girl">Anne</li>
+        <li class="girl">Emma</li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<template name="ourstory">
+  <div class="row" id="story-row">
+    <div class="small-12 columns">
+      <h1 class="text-center">Our Story</h1>
+      <p class="text-justify" id="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi ex. In pharetra pulvinar augue faucibus tempor. Fusce facilisis scelerisque nunc eget ullamcorper. Aliquam interdum nunc vitae dignissim accumsan. Quisque viverra sapien non diam bibendum, eget faucibus est gravida. Nulla metus elit, blandit a quam at, rhoncus porta enim. Donec nec lectus arcu. Morbi dictum augue vel turpis viverra, in mollis augue efficitur. Vestibulum sagittis, felis sit amet hendrerit pharetra, nibh mi fringilla magna, vitae consectetur est quam sed elit. Duis elementum erat eros, eu commodo leo faucibus rutrum. Sed mattis felis vel libero faucibus elementum a nec purus. Nam convallis odio in dolor laoreet, eget efficitur magna aliquet. Aenean a lectus elementum, maximus eros sit amet, luctus nisi. Aenean nec turpis elit. Nullam orci enim, volutpat quis consequat a, sagittis sed tellus. 
+      </p>
+    </div>
+  </div>
+</template>
+
+<template name="frontpage">
+  <div class="row full-width" id="front-row">
+    <div class="small-12 columns full-width">
+      <h1 class="text-center" id="main-words">Sam & Allison</h1>
+    </div>
+  </div>
+</template>
+
+<template name="nav">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">&lt;3 ;)</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="#story-row">Our Story</a></li>
+        <li><a href="#party-row">Wedding Party</a></li>
+        <li><a href="#details-row">Details</a></li>
+        <li><a href="#request-row">Request a Song</a></li>
+        <li><a href="#">RSVP</a></li>
+      </ul>
+      
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="#"></a></li>
+      </ul>
+    </section>
+  </nav>
+</template>
