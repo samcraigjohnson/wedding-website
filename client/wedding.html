@@ -13,6 +13,7 @@
 <template name="Home">
   <head>
     <title>Allison & Sam Wedding</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -89,20 +90,58 @@
 <template name="weddingParty">
   <div class="row" id="party-row">
     <div class="small-12 columns">
-      <h1 class="text-center">The Wedding Party</h1>
+      <h1 class="text-center alt-text"><span class="secondary">BRIDESMAIDS</span> &amp; <span class="secondary"> GROOMSMEN</span></h1>
     </div>
   </div>
-  <div class="row">
-    <div class="medium-12 columns">
-      <ul class="small-block-grid-7">
-        <li class="boy">Charles</li>
-        <li class="boy">John</li>
-        <li class="boy">Matt</li>
-        <li class="boy">Patrick</li>
-        <li class="girl">Emily</li>
-        <li class="girl">Anne</li>
-        <li class="girl">Emma</li>
-      </ul>
+  <div class="row" id="members-row">
+    <div class="medium-6 columns">
+      <div class="row">
+        <div class="medium-6 columns">
+          <div class="filler"></div>
+          <h4><i>MAID of HONOR</i></h4>
+          <h4 class="secondary">EMILY MILCHLING</h4>
+          <h5 class="secondary">Sister</h5>
+        </div>
+        <div class="medium-6 columns">
+          <div class="filler"></div>
+          <h4 class="secondary">ANNE KATZ</h4>
+          <h5 class="secondary">Sister-In-law</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 medium-offset-6 columns">
+          <div class="filler"></div>
+          <h4 class="secondary">EMMA CRENSHAW</h4>
+          <h5 class="secondary">Friend</h5>
+        </div>
+      </div>
+    </div>
+    <div class="medium-6 columns" id="groomsmen">
+      <div class="row">
+        <div class="medium-6 columns">
+          <div class="filler"></div>
+          <h4><i>BEST MAN</i></h4>
+          <h4 class="secondary">CHARLES JOHNSON</h4>
+          <h5 class="secondary">Brother</h5>
+        </div>
+        <div class="medium-6 columns">
+          <div class="filler"></div>
+          <h4 class="secondary">JOHN BROWNING</h4>
+          <h5 class="secondary">Brother</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 columns">
+          <div class="filler"></div>
+          <h4 class="secondary">MATT KATZ</h4>
+          <h5 class="secondary">Brother-in-law</h5>
+        </div>
+        <div class="medium-6 columns">
+          <div class="filler"></div>
+          <h4 class="secondary">Patrick Lloyd</h4>
+          <h5 class="secondary">Brother-from-another-mother</h5>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -120,9 +159,9 @@
 <template name="frontpage">
   <div class="row full-width" id="front-row">
     <div class="small-12 columns text-center full-width">
-      <h1>ALLISON &amp; SAM </h1>
+      <h4><span class="secondary">ALLISON</span> &amp; <span class="secondary">SAM</span></h4>
       <h1 id="main-words"><i>WE'RE HAVING A WEDDING</i></h1>
-      <h2>05 - 16 - 15</h2>
+      <h4 class="secondary" id="date-text">05 - 16 - 15</h4>
     </div>
   </div>
 </template>

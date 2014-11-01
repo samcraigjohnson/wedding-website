@@ -1,7 +1,8 @@
 $lynch: #6C7A89
 $lynch-hover: gray
 $fatface: "FatFace"
-$bigsize: 70px
+$secondary: "Lato"
+$bigsize: 45px
 
 @import utils
 
@@ -12,12 +13,29 @@ $bigsize: 70px
   font-weight: normal
   font-style: normal
 
-h1, h2
+h1, h2, h4
   font-family: $fatface
-  font-weight: 100
+
+.filler
+  background: black
+  width: 200px
+  height: 200px
+
+.secondary
+  font-family: $secondary
 
 .alt-text
   color: $lynch
+  margin-top: 60px
+  margin-bottom: 25px
+  letter-spacing: 8px
+
+#members-row
+  h4
+    color: $lynch
+
+#groomsmen
+  border-left: 1px solid black;
 
 .video-row
   height: 200px
@@ -56,13 +74,14 @@ nav
 #front-row
   min-height: 612px
   height: 100%
-  h1, h2
+  h1, h2, h4
     color: white
     font-weight: lighter
   #main-words
-    margin-top: 210px
-    margin-bottom:10px
+    margin-top: 250px
     font-size: $bigsize
+  #date-text
+    margin-top: -18px;
 
 .boy
   color: blue
