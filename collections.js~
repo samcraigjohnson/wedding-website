@@ -1,0 +1,4 @@
+/* MongoDB collections */
+
+Songs = new Meteor.Collection('songs');
+Rsvps = new Meteor.Collection('rsvps');

@@ -1,0 +1,74 @@
+$lynch: #6C7A89
+$lynch-hover: gray
+$fatface: "FatFace"
+$bigsize: 70px
+
+@import utils
+
+@font-face
+  font-family: 'FatFace'
+  src: url('abrilfatface-regular-webfont.eot')
+  src: url('abrilfatface-regular-webfont.eot?#iefix') format('embedded-opentype'), url('abrilfatface-regular-webfont.woff2') format('woff2'), url('abrilfatface-regular-webfont.woff') format('woff'), url('abrilfatface-regular-webfont.ttf') format('truetype'), url('abrilfatface-regular-webfont.svg#abril_fatfaceregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+h1, h2
+  font-family: $fatface
+  font-weight: 100
+
+.alt-text
+  color: $lynch
+
+.video-row
+  height: 200px
+  #drive-text
+    position: relative
+    z-index: 1
+    top: 250px;
+    h1
+      color: white
+      font-size: $bigsize
+  video
+    position: relative;
+    min-width: 100% 
+    min-height: 100%
+    width: 100%
+    height: auto 
+    z-index: -100
+    background: url('main_hike.jpg')
+    background-size: cover
+
+
+html, body
+  width: 100%
+  height: 100%
+
+.top-bar
+  background: $lynch
+
+nav
+  .top-bar-section li:not(.has-form) a:not(.button)
+    background: $lynch
+  .top-bar-section li:not(.has-form) a:not(.button):hover
+    background: $lynch-hover
+
+
+#front-row
+  min-height: 612px
+  height: 100%
+  h1, h2
+    color: white
+    font-weight: lighter
+  #main-words
+    margin-top: 210px
+    margin-bottom:10px
+    font-size: $bigsize
+
+.boy
+  color: blue
+.girl
+  color: pink
+
+#front-row
+  background-image: url('main_hike.jpg')
+  background-size: cover

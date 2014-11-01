@@ -1,14 +1,80 @@
-<head>
-  <title>Allison & Sam Wedding</title>
-</head>
 
-<body>
-  {{> nav }}
-  {{> frontpage }}
-  {{> ourstory }}
-  {{> weddingParty }}
-  {{> details }}
-</body>
+<template name="SongList">
+  <div class="row">
+    <div class="small-12 medium-6 columns">
+      <h1>Songs:</h1>
+        {{#each songs}}
+          <li><strong>{{artist}}</strong> - {{track}}</li>
+        {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name="Home">
+  <head>
+    <title>Allison & Sam Wedding</title>
+  </head>
+
+  <body>
+    {{> frontpage }}
+    {{> ourstory }}
+    {{> weddingParty }}
+    {{> details }}
+    {{> songRequest }}
+    {{> video}}
+  </body> 
+</template>
+
+<template name="video">
+  <div class="row full-width video-row">
+    <div class="small-12 columns full-width">
+      <div id="drive-text" class="text-center"><h1><i>CAN'T WAIT TO SEE YOU</i></h1></div>
+      <video autoplay loop muted poster="main_hike.jpg" id="driving-vid">
+        <source src="driving.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</template>
+
+<template name="songRequest">
+  <div class="row">
+    <div class="small-12 medium-5 medium-offset-1 columns">
+      <h1 class="text-left">Request a song!</h1>
+      <form>
+        <div class="row">
+          <div class="small-12">
+            <label>Artist
+            <input id="artist-input" type="text" placeholder="Future Islands" />
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <label>Track
+            <input id="track-input" type="text" placeholder="Sun in the morning" />
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <p class="error-message hide left">Oops! Please try again!</p>
+            <p class="success-message hide left">Song added!</p>
+            <a id="request-song" href="#" class="button right">Request!</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--
+    <div class="medium-6 columns">
+      <h1 class="text-center">Songs requested</h1>
+      <ul>
+        {{#each songs}}
+          <li><strong>{{artist}}</strong> - {{track}}</li>
+        {{/each}}
+      </ul>
+    </div> -->
+  </div>
+</template>
 
 <template name="details">
   <div class="row full-width">
@@ -44,7 +110,7 @@
 <template name="ourstory">
   <div class="row" id="story-row">
     <div class="small-12 columns">
-      <h1 class="text-center">Our Story</h1>
+      <h1 class="text-center alt-text"><i>OUR STORY</i></h1>
       <p class="text-justify" id="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi ex. In pharetra pulvinar augue faucibus tempor. Fusce facilisis scelerisque nunc eget ullamcorper. Aliquam interdum nunc vitae dignissim accumsan. Quisque viverra sapien non diam bibendum, eget faucibus est gravida. Nulla metus elit, blandit a quam at, rhoncus porta enim. Donec nec lectus arcu. Morbi dictum augue vel turpis viverra, in mollis augue efficitur. Vestibulum sagittis, felis sit amet hendrerit pharetra, nibh mi fringilla magna, vitae consectetur est quam sed elit. Duis elementum erat eros, eu commodo leo faucibus rutrum. Sed mattis felis vel libero faucibus elementum a nec purus. Nam convallis odio in dolor laoreet, eget efficitur magna aliquet. Aenean a lectus elementum, maximus eros sit amet, luctus nisi. Aenean nec turpis elit. Nullam orci enim, volutpat quis consequat a, sagittis sed tellus. 
       </p>
     </div>
@@ -53,8 +119,10 @@
 
 <template name="frontpage">
   <div class="row full-width" id="front-row">
-    <div class="small-12 columns full-width">
-      <h1 class="text-center" id="main-words">Sam & Allison</h1>
+    <div class="small-12 columns text-center full-width">
+      <h1>ALLISON &amp; SAM </h1>
+      <h1 id="main-words"><i>WE'RE HAVING A WEDDING</i></h1>
+      <h2>05 - 16 - 15</h2>
     </div>
   </div>
 </template>
@@ -63,7 +131,7 @@
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
-        <h1><a href="#">&lt;3 ;)</a></h1>
+        <h1></h1>
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -75,7 +143,7 @@
         <li><a href="#story-row">Our Story</a></li>
         <li><a href="#party-row">Wedding Party</a></li>
         <li><a href="#details-row">Details</a></li>
-        <li><a href="#request-row">Request a Song</a></li>
+        <li><a href="#request-row">Request a song</a></li>
         <li><a href="#">RSVP</a></li>
       </ul>
       
