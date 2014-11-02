@@ -17,6 +17,7 @@ h1, h2, h4
   font-family: $fatface
 
 .filler
+  @extend .center
   background: black
   width: 200px
   height: 200px
@@ -33,6 +34,12 @@ h1, h2, h4
 #members-row
   h4
     color: $lynch
+    margin-bottom: -7px
+  .person-text
+    @extend .center
+    width: 200px
+    .secondary
+      width: 220px
 
 #groomsmen
   border-left: 1px solid black;
@@ -42,10 +49,14 @@ h1, h2, h4
   #drive-text
     position: relative
     z-index: 1
-    top: 250px;
-    h1
+    top: 500px;
+    h1, h5, h4, h2, h3
       color: white
+    h1
       font-size: $bigsize
+    h3
+      margin-left: 17%
+      margin-right: 17%
   video
     position: relative;
     min-width: 100% 
