@@ -81,8 +81,13 @@ nav
   .top-bar-section li:not(.has-form) a:not(.button):hover
     background: $lynch-hover
 
+#songs-row
+  h1
+    color: $lynch
 
 #front-row
+  background-image: url('main_hike.png')
+  background-size: cover
   min-height: 612px
   height: 100%
   h1, h2, h4
@@ -93,12 +98,20 @@ nav
     font-size: $bigsize
   #date-text
     margin-top: -18px;
+ 
+.rsvp-button
+  background: $lynch
+  margin-top: 10px
+  height: 50px
+  padding-top: 5px
+  padding-left: 20px
+  padding-right: 20px
+  letter-spacing: 4px
+  h4
+    color: white
+    font-family: $fatface
+    font-size: 1.5rem
+  
 
-.boy
-  color: blue
-.girl
-  color: pink
-
-#front-row
-  background-image: url('main_hike.jpg')
-  background-size: cover
+.rsvp-button:hover
+  background: $lynch-hover
