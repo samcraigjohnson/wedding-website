@@ -6,7 +6,8 @@
 meteor-platform
 autopublish
 insecure
-foundation
 stevezhu:sass
 iron:router
+nsmeta:zurb-foundation
+louis:slick
 

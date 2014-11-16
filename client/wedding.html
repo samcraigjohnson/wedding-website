@@ -23,6 +23,7 @@
     {{> details }}
     {{> songRequest }}
     {{> registry}}
+    {{> morePhotos}}
   </body> 
 </template>
 
@@ -34,7 +35,7 @@
         <h3 class="secondary">We love you all so much. Having you come celebrate with us is the best gift we could ask for! We are very thankful that you would want to honor us with an additional gifts to start our new life together.</h3>
         <h2 class="secondary">WE ARE REGISTERED AT ZOLA</h2>
       </div>
-      <video autoplay loop muted poster="main_hike.jpg" id="driving-vid">
+      <video autoplay loop muted poster="main_hike.png" id="driving-vid">
         <source src="driving.mp4" type="video/mp4">
       </video>
     </div>
@@ -158,10 +159,47 @@
           <div class="filler"></div>
           <div class="person-text">
             <h4 class="secondary">PATRICK LLOYD</h4>
-            <h5 class="secondary">Brother</h5>
+            <h5 class="secondary">Friend</h5>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</template>
+
+<template name="morePhotos">
+<div id="photoModal" class="reveal-modal" data-reveal>
+  <div class="photo-caro">
+    <div><img src="headkiss.jpg" /></div>
+    <div><img src="fire.jpg" /></div>
+    <div><img src="wolfie.jpg" /></div>
+    <div><img src="grandcanyon.jpg" /></div>
+    <div><img src="miami.jpg" /></div>
+    <div><img src="lake.jpg" /></div>
+    <div><img src="party.jpg" /></div>
+  </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+</template>
+
+<template name="photoCollage">
+  <div class="row">
+    <div class="small-12 columns" id="top-images">
+      <a href="#" data-reveal-id="photoModal"><img src="headkiss.jpg" id="headkiss-img" /></a>
+      <img src="fire.jpg" id="fire-img" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns" id="second-images">
+      <img src="wolfie.jpg" id="wolfie-img" />
+      <img src="grandcanyon.jpg" id="gc-img" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns" id="third-images">
+      <img src="miami.jpg" id="miami-img" />
+      <img src="lake.jpg" id="lake-img" />
+      <img src="party.jpg" id="party-img" />
     </div>
   </div>
 </template>
@@ -170,11 +208,23 @@
   <div class="row" id="story-row">
     <div class="small-12 columns">
       <h1 class="text-center alt-text"><i>OUR STORY</i></h1>
-      <p class="text-justify" id="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi ex. In pharetra pulvinar augue faucibus tempor. Fusce facilisis scelerisque nunc eget ullamcorper. Aliquam interdum nunc vitae dignissim accumsan. Quisque viverra sapien non diam bibendum, eget faucibus est gravida. Nulla metus elit, blandit a quam at, rhoncus porta enim. Donec nec lectus arcu. Morbi dictum augue vel turpis viverra, in mollis augue efficitur. Vestibulum sagittis, felis sit amet hendrerit pharetra, nibh mi fringilla magna, vitae consectetur est quam sed elit. Duis elementum erat eros, eu commodo leo faucibus rutrum. Sed mattis felis vel libero faucibus elementum a nec purus. Nam convallis odio in dolor laoreet, eget efficitur magna aliquet. Aenean a lectus elementum, maximus eros sit amet, luctus nisi. Aenean nec turpis elit. Nullam orci enim, volutpat quis consequat a, sagittis sed tellus. 
-      </p>
+    </div>
+  </div>
+  <div class="row full-width">
+    <!-- Photo Collage -->
+    <div class="medium-7 columns">{{> photoCollage}}</div>
+    <!-- Timeline -->
+    <div class="medium-5 columns" id="story-blocks"> 
+      {{{storyBlock 'THANKSGIVING 2012' 'Allison happened to be in the backseat of the car when Sam was getting picked up from the San Francisco airport.'}}}
+      {{{storyBlock 'NEW YEARS 2013' 'Allison and Sam were reunited on the East Coast to celebrate the New Year with friends. After a great weekend, they made plans to meet up in a month'}}}
+      {{{storyBlock 'TWO WEEKS LATER' 'Sam asked if he could visit Allison earlier than scheduled. He was on his way from San Jose to Baltimore just a few days later.'}}}
+      {{{storyBlock 'SPRING 2013' 'Sam was moving to Durham, so Allison flew out for their first big adventure: a cross country road trip. Sam took Allison to Colorado for her first time. The entire trip was a perfect success.' }}}
+      {{{storyBlock 'FALL 2013' 'Allison joined Sam in Durham.' }}}
+      {{{storyBlock 'MAY 2014' 'Sam invited Allison to an &quot;impromptu&quot; picnic at the Duke Gardens. He opened up a bottle of Veuve and asked her to marry him. She said, &quot;of course!&quot;' }}}
     </div>
   </div>
 </template>
+
 
 <template name="frontpage">
   <div class="row full-width" id="front-row">

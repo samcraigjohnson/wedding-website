@@ -7,9 +7,31 @@ function center_video_text(text_id, video_id){
     });
 }
 
-Template.video.rendered = function(){
-    //center_video_text("#drive-text", "#driving-vid");
+Template.morePhotos.rendered = function(){
+    $(".photo-caro").slick();
 };
+
+$(document).ready(function(){
+    $(".photo-caro").slick({infinite: true});
+});
+
+Template.ourstory.events({
+    "click img": function(event, temp){
+        console.log("clickedimg");
+        $('#photoModal').foundation('reveal', 'open');
+    }
+});
+
+Template.ourstory.helpers({
+    storyBlock: function(header, content){
+        var html = '<div class="row storyblock-row">';
+        html += '<div class="medium-2 columns circleColumn">';
+        html += '<div class="storyCircle"></div></div>';
+        html += '<div class="medium-10 columns"><h4>'+header+'</h4>';
+        html += '<p class="storyText">'+content+'</p></div></div>';
+        return html;
+    }
+});
 
 Template.SongList.helpers({
     songs: function(){
