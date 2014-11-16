@@ -85,11 +85,54 @@
 </template>
 
 <template name="details">
-  <div class="row full-width">
-    <div class="small-12 columns full-width">
-      <h1 class="text-center">Location</h1>
-      <h3 class="text-center">5441 Ross Neck Road, Cambride MD</h3>
-      <img id="loc-img" src="https://maps.googleapis.com/maps/api/staticmap?center=Easton+MD&zoom=9&scale=2&size=640x640&maptype=roadmap&markers=color:red%7C5441+Ross+Neck+Road,Cambride+MD">
+  <div class="row full-width" id="details-row">
+    <div class="text-center small-12 columns full-width">
+      <h1 class="secondary" id="venue-text">THE VENUE</h1>
+      <h4 class="secondary">Please join us on May 16th, 2015<br/>
+        for a casual backyard wedding on the Chesapeake Bay.</h4>
+      <div id="address-box">
+        <h1><i>SWAN COVE MANOR</i></h1>
+        <h1 class="secondary">5441 Ross Neck Road<br/>
+          Cambridge, Maryland 21613</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center" id="schedule-row">
+    <div class="medium-4 columns">
+      <div class="icon"></div>
+      <h3><i>CEREMONY</i></h3>
+      <h5 class="secondary">4:30pm</h5>
+    </div>
+    <div class="medium-4 columns">
+      <div class="icon"></div>
+      <h3><i>COCKTAIL HOUR</i></h3>
+      <h5 class="secondary">5:30pm</h5>
+    </div>
+    <div class="medium-4 columns">
+      <div class="icon"></div>
+      <h3><i>RECEPTION</i></h3>
+      <h5 class="secondary">6:30pm</h5>
+    </div>
+  </div>
+  <div class="row text-center" id="accom-row">
+    <h1>ACCOMADATIONS</h1>
+    <div class="medium-4 columns gray-box">
+      <h3><i>FAMILY</i></h3>
+      <p>We want to make sure our out of town guests have the most convenient accomodation options. Please reach out to the appropiate person below for more information.</p>
+      <h5>Lundes:</h5>
+      <p><i>Please contact Sharon</i></p>
+      <h5>Johnsons:</h5>
+      <p><i>Please contact Anne</i></p>
+    </div>
+    <div class="medium-4 columns">
+      <div class="icon"></div>
+      <h3><i>COCKTAIL HOUR</i></h3>
+      <h5 class="secondary">5:30pm</h5>
+    </div>
+    <div class="medium-4 columns">
+      <div class="icon"></div>
+      <h3><i>RECEPTION</i></h3>
+      <h5 class="secondary">6:30pm</h5>
     </div>
   </div>
 </template>
