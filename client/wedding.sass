@@ -13,6 +13,12 @@ $bigsize: 45px
   font-weight: normal
   font-style: normal
 
+.detail-text
+  letter-spacing: 2px
+
+h1
+  font-size: 3rem
+
 h1, h2, h3, h4
   font-family: $fatface
 
@@ -107,6 +113,8 @@ h1, h2, h3, h4
 
 .video-row
   height: 200px
+  .small-12
+    margin-top: -220px
   #drive-text
     position: relative
     z-index: 1
@@ -114,8 +122,8 @@ h1, h2, h3, h4
     h1, h5, h4, h2, h3
       color: white
     h1
-      font-size: $bigsize
-    h3
+      letter-spacing: 4px
+    h4
       margin-left: 17%
       margin-right: 17%
   video
@@ -147,15 +155,32 @@ nav
   font-family: $secondary
   .gray-box
    background: $lynch
+   min-height: 360px
+   margin: 0 3px
+   padding: 5px 12px
    h5, h3, p
      color: white
    h5
      font-family: $secondary
-       
+   h3
+     letter-spacing: 4px
 
 #songs-row
+  margin-top: 50px
   h1
+    margin-bottom: 2px
+  h1, h4
     color: $lynch
+  form
+    width: 350px
+    margin: 50px auto
+    #request-song
+      font-family: $fatface
+      width: 100%
+      background: $lynch
+      color: white
+      font-size: 20px
+      letter-spacing: 4px
 
 #schedule-row
   margin-top: 50px
@@ -168,10 +193,22 @@ nav
     margin-top: -10px
   .icon
     margin: 0 auto
-    background: $lynch
     height: 100px
     width: 100px;
 
+#conclusion-row
+  background-image: url('drivewayedit.png')
+  background-size: cover
+  min-height: 500px
+  height: 600px
+  padding-top: 50px
+  h1, h2
+    color: white
+  h1
+    font-size: 3rem
+    letter-spacing: 4px
+    margin-top: 0
+    margin-botom: 0
 
 #details-row
   background-image: url('siteedit.jpg')
@@ -182,18 +219,35 @@ nav
   #venue-text
     padding-top: 20px
     letter-spacing: 8px
-  h1, h4
+  h1, h3, h2
     color: white
+  h3
+    padding-bottom: 15px
+    letter-spacing: 2px
   #address-box
+    padding-top: 10px
+    padding-bottom: 2px
     margin: 0 auto;
     width: 500px
     background: $lynch
+    #swan-cove
+      margin-bottom: -7px
+      letter-spacing: 4px
+      padding-bottom: 0
+    #address
+      line-height: 35px
+      padding-top: 0
+      line-spacing: 1px
 
 #front-row
   background-image: url('main_hike.png')
   background-size: cover
   min-height: 612px
   height: 100%
+  #allison-sam
+    margin-top: 60px
+    font-size: 2rem
+    color: white
   h1, h2, h4
     color: white
     font-weight: lighter
@@ -201,7 +255,7 @@ nav
     margin-top: 250px
     font-size: $bigsize
   #date-text
-    margin-top: -18px;
+    margin-top: -40px;
  
 .rsvp-button
   background: $lynch
