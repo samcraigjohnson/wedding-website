@@ -59,6 +59,20 @@ h1, h2, h3, h4
     margin-left: 30px
     width: 100px
 
+.party-row
+  .small-12.medium-10
+    margin-left: 0
+    padding-left: 0
+    text-align: left
+
+.photo-col
+  margin: 0 auto;
+  text-align: center;
+  img
+    margin: 0 auto;
+    padding: 15px;
+    width: 290px;
+
 #story-blocks
   padding-right: 90px
   .storyblock-row
@@ -98,7 +112,7 @@ h1, h2, h3, h4
   margin-bottom: 25px
   letter-spacing: 8px
 
-#members-row
+.members-row
   h4
     color: $lynch
     margin-bottom: -7px
@@ -108,8 +122,9 @@ h1, h2, h3, h4
     .secondary
       width: 220px
 
-#groomsmen
-  border-left: 1px solid black;
+.groomsmen-word
+  .alt-text
+    margin-top: 0;
 
 .video-row
   height: 200px
@@ -150,20 +165,42 @@ nav
   .top-bar-section li:not(.has-form) a:not(.button):hover
     background: $lynch-hover
 
+.accom-boxes
+  position: relative !important
+  img
+    margin-left: -100px
+    z-index: -100
+  h1
+    position: relative
+    z-index: 100
+    top: -873px
+    left: 140px
+    letter-spacing: 4px
+    color: white
+  .gray-box
+    padding-bottom: 10px;
+    position: relative
+    top: -860px
+    left: 275px
+    width: 750px
+    text-align: left
+    background: $lynch
+    padding-top: 3px;
+    padding-left: 15px;
+    h5, h3, p
+      color: white
+    h5
+      font-family: $secondary
+    h3
+      letter-spacing: 4px
+    p
+      margin-bottom: 0
+      .extra
+        font-size: 12px
+
 #accom-row
   margin-top: 30px
   font-family: $secondary
-  .gray-box
-   background: $lynch
-   min-height: 360px
-   margin: 0 3px
-   padding: 5px 12px
-   h5, h3, p
-     color: white
-   h5
-     font-family: $secondary
-   h3
-     letter-spacing: 4px
 
 #songs-row
   margin-top: 50px
