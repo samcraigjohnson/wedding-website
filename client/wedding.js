@@ -39,6 +39,22 @@ Template.SongList.helpers({
     }
 });
 
+function goToByScroll(id){
+      // Remove "link" from the ID
+    id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate({
+        scrollTop: $("#"+id).offset().top},
+        'slow');
+}
+
+Template.frontpage.events({
+    "click .rsvp-button": function(event){
+        event.preventDefault();
+        goToByScroll("rsvp-row");
+    }
+});
+
 Template.songRequest.events({
     "click #request-song": function(event){
         event.preventDefault();
