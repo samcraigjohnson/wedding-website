@@ -6,6 +6,10 @@ $bigsize: 45px
 
 @import utils
 
+
+/* div, h1, h2, h3, h4, p
+/*   border: 1px solid black !important
+
 @font-face
   font-family: 'FatFace'
   src: url('abrilfatface-regular-webfont.eot')
@@ -106,11 +110,18 @@ h1, h2, h3, h4
 .secondary
   font-family: $secondary
 
+.lynch
+  color: $lynch
+
 .alt-text
   color: $lynch
   margin-top: 60px
   margin-bottom: 25px
   letter-spacing: 8px
+
+.bottom-text
+  color: $lynch
+  font-size: 17px
 
 .members-row
   h4
@@ -171,10 +182,11 @@ nav
     margin-left: -100px
     z-index: -100
   h1
+    width: 500px
     position: relative
     z-index: 100
     top: -873px
-    left: 140px
+    left: 400px
     letter-spacing: 4px
     color: white
   .gray-box
@@ -187,6 +199,7 @@ nav
     background: $lynch
     padding-top: 3px;
     padding-left: 15px;
+    margin-bottom: 15px;
     h5, h3, p
       color: white
     h5
@@ -195,12 +208,41 @@ nav
       letter-spacing: 4px
     p
       margin-bottom: 0
+      padding-right: 100px
+      padding-left: 10px
       .extra
         font-size: 12px
+    a
+      font-style: italic
+      color: white
+    a:hover
+      text-decoration: underline
+      color: white
 
 #accom-row
   margin-top: 30px
   font-family: $secondary
+
+#accom-row-row
+  max-height: 1000px
+
+.big-button
+  font-family: $fatface
+  width: 100%
+  background: $lynch
+  color: white
+  font-size: 20px
+  letter-spacing: 4px
+
+#rsvp-row
+  h1
+    margin-bottom: 10px
+  h3
+    margin-bottom: 28px
+    line-height: 80%
+  textarea
+    margin-bottom: 10px
+
 
 #songs-row
   margin-top: 50px
@@ -211,14 +253,8 @@ nav
   form
     width: 350px
     margin: 50px auto
-    #request-song
-      font-family: $fatface
-      width: 100%
-      background: $lynch
-      color: white
-      font-size: 20px
-      letter-spacing: 4px
-
+   
+      
 #schedule-row
   margin-top: 50px
   h3
@@ -245,7 +281,7 @@ nav
     font-size: 3rem
     letter-spacing: 4px
     margin-top: 0
-    margin-botom: 0
+    margin-bottom: 0
 
 #details-row
   background-image: url('siteedit.jpg')

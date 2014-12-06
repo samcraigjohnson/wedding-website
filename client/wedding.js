@@ -58,3 +58,25 @@ Template.songRequest.events({
         });
     }
 });
+Template.rsvp.events({
+    "click #send-rsvp": function(event){
+        event.preventDefault();
+        var $names = $("#name-input");
+        var $attending = $("input[name='attending']:checked");
+        var $textarea = $('#message-area');
+        Meteor.call('sendRsvp', $names.val(), $attending.val(), $textarea.val(), function(err, val){
+            if(err){
+                $(".error-message").show();
+            }
+            else{
+                $(".error-message").hide();
+                $(".success-message").show();
+                $names.val('');
+                $textarea.val('');
+                setTimeout(function(){$('.success-message').hide()}, 1500);
+            }
+        });
+    }
+});
+ 
+

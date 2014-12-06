@@ -14,6 +14,7 @@
   <head>
     <title>Allison & Sam Wedding</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -25,7 +26,54 @@
     {{> songRequest }}
     {{> morePhotos}}
     {{> conclusion}}
+    {{> rsvp}}
   </body> 
+</template>
+
+<template name="rsvp">
+  <div class="row full-width" id="rsvp-row">
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="small-12 medium-6 medium-centered columns text-center">
+          <h1 class="lynch"><i>RSVP</i></h1>
+          <h3 class="lynch secondary"><small>With all the craziness that comes with a wedding, we would love to spend as much time as possible with our closest and dearest — thank you for not bringing a guest.</small></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-6 medium-centered columns">
+          <form>
+            <div class="row">
+              <div class="small-12">
+                <label>Name(s):</label>
+                <input id="name-input" type="text" placeholder="Sam Johnson & Allison Milchling" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12">
+                <label>Attending:</label>
+                <input type="radio" name="attending" value="Yes" id="attendingYes" checked><label for="attendingYes">Yes</label>
+                <input type="radio" name="attending" value="No" id="attendingNo"><label for="attendingNo">No</label>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12">
+                <label>Message to Sam & Allison:</label>
+                <textarea id="message-area"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12">
+                <p class="error-message hide left">Oops! Please try again!</p>
+                <p class="success-message hide left">RSVP sent!</p>
+                <a id="send-rsvp" href="#" class="button right big-button"><i>SEND RSVP</i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <template name="conclusion">
@@ -69,12 +117,12 @@
           <div class="small-12">
             <input id="track-input" type="text" placeholder="Title" />
           </div>
-        </div>
+        </div> 
         <div class="row">
           <div class="small-12">
             <p class="error-message hide left">Oops! Please try again!</p>
             <p class="success-message hide left">Song added!</p>
-            <a id="request-song" href="#" class="button right"><i>ADD THIS GREAT SONG</i></a>
+            <a id="request-song" href="#" class="button right big-button"><i>ADD THIS GREAT SONG</i></a>
           </div>
         </div>
       </form>
@@ -123,32 +171,30 @@
   </div>
   <div class="row text-center" id="accom-row">
     <div class="small-12 columns accom-boxes">
-      <div class="row">
+      <div class="row" id="accom-row-row">
         <img src="cuteinmaine.jpg" id="accom-pic">
         <h1><i>ACCOMODATIONS</i></h1>
         <div class="gray-box">
           <h3><i>FAMILY</i></h3>
           <p>We want to make sure our out of town guests have the most convenient accomodation options. Please reach out to the appropiate person below for more information.</p>
-          <p class="text-center extra">Lundes:<br/>
-          <i>Please contact Sharon</i><br/>
-          Johnsons:<br/>
-          <i>Please contact Anne</i></p> 
+          <p class="text-center extra">Lundes:
+          <i>please contact <a href="mailto:dottie1024@gmail.com?subject=Wedding Accomodations">Sharon Lunde</a></i><br/>
+          Johnsons:
+          <i>please contact <a href="mailto:annekkatz@gmail.com?subject=Wedding Accommodations">Anne Katz</a></i></p> 
         </div>
         <div class="gray-box">
           <h3><i>FRIENDS</i></h3>
-          <p>We want to make sure our out of town guests have the most convenient accomodation options. Please reach out to the appropiate person below for more information.</p>
-          <h5>Camping</h5>
+          <p>We are very thankful that you are traveling so far across the Bay Bridge to celebrate with us. Because we are having our wedding on a secluded eleven acres, we welcome you to bring a tent to camp out overnight. Our only request is that you pack up and leave by 10:00am on Sunday.</p>
         </div>
-      </div>
-      <div class="medium-4 columns">
         <div class="gray-box">
           <h3><i>OTHER OPTIONS</i></h3>
-          <p>We want to make sure our out of town guests have the most convenient accomodation options. Please reach out to the appropiate person below for more information.</p>
-          <h5>VRBO:</h5>
-          <p>Rent a house <a href="#">close by</a></p>
+          <p><a href="http://www.chesapeakebay.hyatt.com/en/hotel/home.html">Hyatt Regency Chesapeake Bay</a></p>
+          <p><a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/cambridge/cgemd/hoteldetail">Holiday Inn Express Cambridge</a></p>
+          <p><a href="http://www.vrbo.com/vacation-rentals/usa/maryland/eastern-shore/cambridge?from-date=2015-05-15&to-date=2015-05-17">VRBO Vacation Rentals</a></p>
         </div>
       </div>
     </div>
+    <p class="text-center bottom-text"><i>If you are planning to stop into Baltimore or DC and you would like recommendations,<br/>we would be excited to share our favorite places with you!</i></p>
   </div>
 </template>
 
