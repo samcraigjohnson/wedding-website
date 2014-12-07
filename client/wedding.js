@@ -39,6 +39,12 @@ Template.SongList.helpers({
     }
 });
 
+Template.RsvpList.helpers({
+    rsvp: function(){
+        return Rsvps.find();
+    }
+});
+
 function goToByScroll(id){
       // Remove "link" from the ID
     id = id.replace("link", "");
@@ -80,6 +86,7 @@ Template.rsvp.events({
         var $names = $("#name-input");
         var $attending = $("input[name='attending']:checked");
         var $textarea = $('#message-area');
+        Rsvps.insert({names: $names.val(), attending: $attending.val()});
         Meteor.call('sendRsvp', $names.val(), $attending.val(), $textarea.val(), function(err, val){
             if(err){
                 $(".error-message").show();

@@ -5,3 +5,7 @@ Router.route('/', function(){
 Router.route('/songs', function(){
     this.render("SongList");
 });
+
+Router.route('/rsvp', function(){
+    this.render("RsvpList");
+});
