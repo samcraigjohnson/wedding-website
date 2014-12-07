@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 40em){
 .accom-boxes .gray-box{
     position: relative;
@@ -27,3 +28,398 @@ h1 { font-size: 2.5rem !important; }
 #drive-text { position: initial !important; }
 
 }
+
+.full-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  padding-left: 0;
+  padding-right: 0; }
+
+.error-message {
+  color: red; }
+
+.success-message {
+  color: green; }
+
+.center, .filler, .members-row .person-text {
+  margin: 0 auto; }
+
+/* div, h1, h2, h3, h4, p */
+/*   border: 1px solid black !important */
+@font-face {
+  font-family: "FatFace";
+  src: url("abrilfatface-regular-webfont.eot");
+  src: url("abrilfatface-regular-webfont.eot?#iefix") format("embedded-opentype"), url("abrilfatface-regular-webfont.woff2") format("woff2"), url("abrilfatface-regular-webfont.woff") format("woff"), url("abrilfatface-regular-webfont.ttf") format("truetype"), url("abrilfatface-regular-webfont.svg#abril_fatfaceregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.fat-face {
+  font-family: "FatFace"; }
+
+.detail-text {
+  letter-spacing: 2px; }
+
+h1 {
+  font-size: 3rem; }
+
+h1, h2, h3, h4 {
+  font-family: "FatFace"; }
+
+#top-images {
+  padding-top: 20px;
+  text-align: center; }
+  #top-images #headkiss-img {
+    width: 100px;
+    margin-right: 30px;
+    position: relative;
+    top: 75px; }
+  #top-images #fire-img {
+    width: 200px; }
+
+#second-images {
+  text-align: center;
+  margin-top: 50px; }
+  #second-images #wolfie-img {
+    width: 150px;
+    margin-left: 125px; }
+  #second-images #gc-img {
+    width: 220px;
+    margin-left: 40px; }
+
+#third-images {
+  text-align: center;
+  margin-top: 30px; }
+  #third-images #miami-img {
+    width: 150px;
+    position: relative;
+    top: -50px; }
+  #third-images #lake-img {
+    position: relative;
+    top: 30px;
+    margin-left: 30px;
+    width: 200px; }
+  #third-images #party-img {
+    margin-left: 30px;
+    width: 100px; }
+
+.party-row .small-12.medium-10 {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left; }
+
+.photo-col {
+  margin: 0 auto;
+  text-align: center; }
+  .photo-col img {
+    margin: 0 auto;
+    padding: 15px;
+    width: 290px; }
+
+#story-blocks {
+  padding-right: 90px; }
+  #story-blocks .storyblock-row {
+    border-left: 1px solid #6C7A89;
+    font-family: "Lato" !important;
+    color: #6C7A89; }
+    #story-blocks .storyblock-row .medium-10 {
+      margin-right: 23px; }
+      #story-blocks .storyblock-row .medium-10 p {
+        font-size: 0.9rem; }
+      #story-blocks .storyblock-row .medium-10 h4 {
+        color: #6C7A89;
+        font-family: "Lato";
+        font-size: 1.1rem; }
+    #story-blocks .storyblock-row .circleColumn {
+      margin-left: -23px;
+      margin-top: 15px; }
+      #story-blocks .storyblock-row .circleColumn .storyCircle {
+        width: 15px;
+        height: 15px;
+        border-radius: 7px;
+        border: 1px solid #6C7A89;
+        background: white; }
+
+.filler {
+  background: black;
+  width: 200px;
+  height: 200px; }
+
+.secondary {
+  font-family: "Lato"; }
+
+.lynch {
+  color: #6C7A89; }
+
+.alt-text {
+  color: #6C7A89;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  letter-spacing: 8px; }
+
+.bottom-text {
+  color: #6C7A89;
+  font-size: 17px; }
+
+.members-row h4 {
+  color: #6C7A89;
+  margin-bottom: -7px; }
+.members-row .person-text {
+  width: 200px; }
+  .members-row .person-text .secondary {
+    width: 220px; }
+
+.groomsmen-word .alt-text {
+  margin-top: 0; }
+
+.video-row {
+  height: 200px; }
+  .video-row .pic-row {
+    margin-right: 0; }
+    .video-row .pic-row img {
+      max-width: 100%;
+      cursor: pointer; }
+    .video-row .pic-row img:hover {
+      opacity: 0.4; }
+    .video-row .pic-row #crate {
+      width: 300px;
+      margin-top: 62px; }
+    .video-row .pic-row #zola {
+      width: 186px;
+      margin-top: 40px; }
+  .video-row .small-12 {
+    margin-top: -372px; }
+  .video-row #drive-text {
+    position: relative;
+    z-index: 1;
+    top: 500px; }
+    .video-row #drive-text h1, .video-row #drive-text h5, .video-row #drive-text h4, .video-row #drive-text h2, .video-row #drive-text h3 {
+      color: white; }
+    .video-row #drive-text h1 {
+      letter-spacing: 4px; }
+    .video-row #drive-text h4 {
+      margin-left: 17%;
+      margin-right: 17%; }
+  .video-row video {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    background: url("main_hike.jpg");
+    background-size: cover; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.top-bar {
+  background: #6C7A89; }
+
+nav .top-bar-section li:not(.has-form) a:not(.button) {
+  background: #6C7A89; }
+nav .top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: gray; }
+
+.accom-boxes {
+  position: relative !important; }
+  .accom-boxes img {
+    margin-left: -100px;
+    z-index: -100; }
+  .accom-boxes h1 {
+    width: 500px;
+    position: relative;
+    z-index: 100;
+    top: -873px;
+    left: 400px;
+    letter-spacing: 4px;
+    color: white; }
+  .accom-boxes .gray-box {
+    padding-bottom: 10px;
+    position: relative;
+    overflow: wrap;
+    top: -860px;
+    left: 275px;
+    width: 76%;
+    text-align: left;
+    background: #6C7A89;
+    padding-top: 3px;
+    padding-left: 15px;
+    margin-bottom: 15px; }
+    .accom-boxes .gray-box h5, .accom-boxes .gray-box h3, .accom-boxes .gray-box p {
+      color: white; }
+    .accom-boxes .gray-box h5 {
+      font-family: "Lato"; }
+    .accom-boxes .gray-box h3 {
+      letter-spacing: 4px; }
+    .accom-boxes .gray-box p {
+      margin-bottom: 0;
+      padding-right: 90px;
+      padding-left: 10px; }
+      .accom-boxes .gray-box p .extra {
+        font-size: 12px; }
+    .accom-boxes .gray-box a {
+      font-style: italic;
+      color: white; }
+    .accom-boxes .gray-box a:hover {
+      text-decoration: underline;
+      color: white; }
+
+.wedding-link, .wedding-link:visited {
+  font-style: italic;
+  color: white; }
+
+.wedding-link:hover {
+  text-decoration: underline;
+  color: white; }
+
+#accom-row {
+  margin-top: 30px;
+  font-family: "Lato"; }
+
+#accom-row-row {
+  max-height: 1000px; }
+
+.big-button {
+  font-family: "FatFace";
+  width: 100%;
+  background: #6C7A89;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 4px; }
+
+.big-button:hover, .big-button:focus {
+  background: #6C7A89;
+  opacity: 0.4; }
+
+#rsvp-row h1 {
+  margin-bottom: 10px; }
+#rsvp-row h3 {
+  margin-bottom: 28px;
+  line-height: 80%; }
+#rsvp-row textarea {
+  margin-bottom: 10px; }
+
+#songs-row {
+  margin-top: 50px; }
+  #songs-row .insta-col {
+    padding: 20px;
+    margin-top: 50px;
+    background: #6C7A89; }
+    #songs-row .insta-col #hashtag {
+      margin-top: 25px; }
+    #songs-row .insta-col h3 {
+      color: white; }
+    #songs-row .insta-col img {
+      width: 102px;
+      margin-top: 15px; }
+  #songs-row .insta-col:hover {
+    opacity: 0.4; }
+  #songs-row h1 {
+    margin-bottom: 2px; }
+  #songs-row #songtext {
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 80%; }
+  #songs-row h1, #songs-row h3 {
+    color: #6C7A89; }
+  #songs-row form {
+    width: 350px;
+    margin: 50px auto; }
+
+#schedule-row {
+  margin-top: 50px; }
+  #schedule-row h3 {
+    margin-top: 5px;
+    letter-spacing: 3px; }
+  #schedule-row h3, #schedule-row h5 {
+    color: #6C7A89; }
+  #schedule-row h5 {
+    margin-top: -10px; }
+  #schedule-row .icon {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px; }
+
+#conclusion-row {
+  background-image: url("drivewayedit.png");
+  background-size: cover;
+  min-height: 500px;
+  height: 700px;
+  padding-top: 50px; }
+  #conclusion-row h1, #conclusion-row h2 {
+    color: white; }
+  #conclusion-row h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+#details-row {
+  background-image: url("siteedit.jpg");
+  background-size: cover;
+  min-height: 500px;
+  height: 500px;
+  margin-top: 50px; }
+  #details-row #venue-text {
+    padding-top: 20px;
+    letter-spacing: 8px; }
+  #details-row h1, #details-row h3, #details-row h2 {
+    color: white; }
+  #details-row h3 {
+    padding-bottom: 15px;
+    letter-spacing: 2px; }
+  #details-row #address-box {
+    padding-top: 10px;
+    padding-bottom: 2px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 500px;
+    background: #6C7A89; }
+    #details-row #address-box #swan-cove {
+      margin-bottom: -7px;
+      letter-spacing: 4px;
+      padding-bottom: 0; }
+    #details-row #address-box #address {
+      line-height: 35px;
+      padding-top: 0;
+      line-spacing: 1px; }
+
+#front-row {
+  background-image: url("main_hike.png");
+  background-size: cover;
+  min-height: 612px;
+  height: 100%; }
+  #front-row #infinity {
+    width: 66px;
+    margin-top: -19px; }
+  #front-row #allison-sam {
+    margin-top: 60px;
+    font-size: 2rem;
+    color: white; }
+  #front-row h1, #front-row h2, #front-row h4 {
+    color: white;
+    font-weight: lighter; }
+  #front-row #main-words {
+    margin-top: 178px;
+    font-size: 45px; }
+  #front-row #date-text {
+    margin-top: -40px; }
+
+.rsvp-button {
+  background: #6C7A89;
+  margin-top: 10px;
+  height: 50px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 4px; }
+  .rsvp-button h4 {
+    color: white;
+    font-family: "FatFace";
+    font-size: 1.5rem; }
+
+.rsvp-button:hover {
+  background: transparent;
+  border: 1px solid white; }
