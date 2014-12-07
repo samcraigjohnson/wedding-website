@@ -15,6 +15,7 @@
     <title>Allison & Sam Wedding</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
 
   <body>
@@ -92,9 +93,17 @@
       <div id="drive-text" class="text-center">
         <h1><i>REGISTRY</i></h1>
         <h4 class="secondary detail-text">We love you all so much. Having you come celebrate with us is the best gift we could ask for! We are very thankful that you would want to honor us with an additional gifts to start our new life together.</h4>
-        <h2 class="secondary">WE ARE REGISTERED AT ZOLA</h2>
+        <h2 class="secondary">WE ARE REGISTERED AT</h2>
+        <div class="row pic-row">
+          <div class="small-3 small-offset-3 columns text-center">
+            <a href="https://www.zola.com/registry/allisonandsam/" target="_blank"><img src="zola.png" id="zola" /></a>
+          </div>
+          <div class="small-3 columns text-center end">
+            <a href="http://www.crateandbarrel.com/Gift-Registry/allison-milchling-and-sam-johnson/r5253127" target="_blank"><img src="crate-and-barrel-logo.png" id="crate" /></a>
+          </div>
+	    </div>
       </div>
-      <video autoplay loop muted poster="main_hike.png" id="driving-vid">
+      <video autoplay loop muted poster="video.png" id="driving-vid">
         <source src="driving.mp4" type="video/mp4">
       </video>
     </div>
@@ -102,11 +111,16 @@
 </template>
 
 <template name="songRequest">
-  <div class="row" id="songs-row">
-    <div class="small-12 medium-10 medium-centered columns text-center">
+  <div class="row" id="songs-row"><a href="http://hshtags.com/tags/v/asjforever" target="_blank">
+    <div class="medium-3 columns insta-col text-center">
+      <h3 class="secondary">Please share<br/>your photos!</h3>
+      <img src="instagram.png"/>
+      <h3 class="secondary" id="hashtag"><span class="fat-face">#</span>ASJFOREVER</h3>
+    </div></a>
+    <div class="small-12 medium-9 columns text-center">
       <h1><span class="secondary">BE OUR</span> <i>DJ</i></h1>
-      <h4 class="detail-text secondary"> We'd love to see all of our guests out on the dance floor.
-        Help us get everyone in the dancing spirit by submitting songs for our playlist.</h4>
+      <h3 id="songtext" class="detail-text secondary"><small>We'd love to see all of our guests out on the dance floor.
+        Help us get everyone in the dancing spirit by submitting songs for our playlist.</small></h3>
       <form>
         <div class="row">
           <div class="small-12">
@@ -188,9 +202,9 @@
         </div>
         <div class="gray-box">
           <h3><i>OTHER OPTIONS</i></h3>
-          <p><a href="http://www.chesapeakebay.hyatt.com/en/hotel/home.html">Hyatt Regency Chesapeake Bay</a></p>
-          <p><a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/cambridge/cgemd/hoteldetail">Holiday Inn Express Cambridge</a></p>
-          <p><a href="http://www.vrbo.com/vacation-rentals/usa/maryland/eastern-shore/cambridge?from-date=2015-05-15&to-date=2015-05-17">VRBO Vacation Rentals</a></p>
+          <p><a target="_blank" href="http://www.chesapeakebay.hyatt.com/en/hotel/home.html">Hyatt Regency Chesapeake Bay</a></p>
+          <p><a target="_blank" href="http://www.ihg.com/holidayinnexpress/hotels/us/en/cambridge/cgemd/hoteldetail">Holiday Inn Express Cambridge</a></p>
+          <p><a target="_blank" href="http://www.vrbo.com/vacation-rentals/usa/maryland/eastern-shore/cambridge?from-date=2015-05-15&to-date=2015-05-17">VRBO Vacation Rentals</a></p>
         </div>
       </div>
     </div>
@@ -353,6 +367,7 @@
   <div class="row full-width" id="front-row">
     <div class="small-12 columns text-center full-width">
       <h4 id="allison-sam"><span class="secondary">ALLISON</span> &amp; <span class="secondary">SAM</span></h4>
+      <img src="infinity.png" id="infinity"/>
       <h1 id="main-words"><i>WE'RE HAVING A WEDDING</i></h1>
       <h4 class="secondary" id="date-text">05 - 16 - 15</h4>
       <div class="button rsvp-button"><h4><i>RSVP</i></h4></div>

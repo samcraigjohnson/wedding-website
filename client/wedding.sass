@@ -17,6 +17,9 @@ $bigsize: 45px
   font-weight: normal
   font-style: normal
 
+.fat-face
+  font-family: $fatface
+
 .detail-text
   letter-spacing: 2px
 
@@ -139,8 +142,21 @@ h1, h2, h3, h4
 
 .video-row
   height: 200px
+  .pic-row
+    margin-right: 0
+    img
+      max-width: 100%
+      cursor: pointer
+    img:hover
+      opacity: 0.4
+    #crate
+      width: 300px
+      margin-top: 62px
+    #zola
+      width: 186px
+      margin-top: 40px
   .small-12
-    margin-top: -220px
+    margin-top: -372px
   #drive-text
     position: relative
     z-index: 1
@@ -211,7 +227,7 @@ nav
       letter-spacing: 4px
     p
       margin-bottom: 0
-      padding-right: 100px
+      padding-right: 90px
       padding-left: 10px
       .extra
         font-size: 12px
@@ -246,6 +262,10 @@ nav
   font-size: 20px
   letter-spacing: 4px
 
+.big-button:hover, .big-button:focus
+  background: $lynch
+  opacity: .4
+
 #rsvp-row
   h1
     margin-bottom: 10px
@@ -257,10 +277,28 @@ nav
 
 
 #songs-row
+  .insta-col
+    padding: 20px
+    margin-top: 50px
+    #hashtag
+      margin-top: 25px
+    h3
+      color: white
+    background: $lynch
+    img
+      width: 102px
+      margin-top: 15px
+  .insta-col:hover
+    opacity: .4
+
   margin-top: 50px
   h1
     margin-bottom: 2px
-  h1, h4
+  #songtext
+    padding-right: 20px
+    padding-left: 20px
+    line-height: 80%
+  h1, h3
     color: $lynch
   form
     width: 350px
@@ -285,7 +323,7 @@ nav
   background-image: url('drivewayedit.png')
   background-size: cover
   min-height: 500px
-  height: 600px
+  height: 700px
   padding-top: 50px
   h1, h2
     color: white
@@ -330,6 +368,9 @@ nav
   background-size: cover
   min-height: 612px
   height: 100%
+  #infinity
+    width: 66px
+    margin-top: -19px
   #allison-sam
     margin-top: 60px
     font-size: 2rem
@@ -338,7 +379,7 @@ nav
     color: white
     font-weight: lighter
   #main-words
-    margin-top: 250px
+    margin-top: 178px
     font-size: $bigsize
   #date-text
     margin-top: -40px;
